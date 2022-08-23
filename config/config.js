@@ -8,5 +8,6 @@ const result = dotenv.config({
 });
 const PORT = result.parsed.PORT;
 const HOST = result.parsed.HOST;
+const URLMONGO = result.parsed.URLMONGO
 
-export { PORT, HOST };
+export { PORT, HOST, URLMONGO };
