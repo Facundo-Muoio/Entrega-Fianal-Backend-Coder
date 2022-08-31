@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container w-75 d-flex justify-content-between">
+      <a class="navbar-brand" href="/">LAST <i class="bi bi-book-half"> PAGES</i></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarColor03"
+        aria-controls="navbarColor03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <% if(!user) { %>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/login">INICIAR SESIÓN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">REGISTRARSE</a>
+            </li>
+          </ul>
+        <%} else {%>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >PRODUCTOS</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/fantasia">Fantasia</a>
+                <a class="dropdown-item" href="/terror">Terror</a>
+                <a class="dropdown-item" href="/infantil">Infantil</a>
+                <a class="dropdown-item" href="/ficcion">Ficción y Literatura</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/">Todos</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><%=user.name.toUpperCase() %></a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/perfil">Perfil</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/logout" id="logout">Cerrar Sesión</a>
+                </div>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a href="/cart">
+                <i class="bi bi-cart-fill"></i>
+              </a>
+            </li>
+          </ul>
+        <%}%>
+      </div>
+    </div>
+</nav>

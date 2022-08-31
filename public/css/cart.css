@@ -1,0 +1,31 @@
+.img-cart{
+    width: 100px;
+    height: 120px;
+}
+
+.btn-trash{
+    width: fit-content;
+    height: fit-content;
+    background-color:rgb(44, 62, 80);
+    border: none;
+}
+
+.tbody > tr:hover .btn-trash {
+    background-color: rgb(60, 76, 93);
+}
+
+.tbody > tr > td {
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bi-trash3-fill{
+    font-size: 30px;
+    color: red;
+}
+
+#btn-purchase {
+    margin: 30px 240px;
+}

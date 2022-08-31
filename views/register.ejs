@@ -18,13 +18,13 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <%- include("./navbar.ejs"); %>
-    <form action="/home" method="POST" id="form-registro">
-      <div class="card border-dark w-25 mx-auto my-5">
+    <%- include("./partials/navbar.ejs"); %>
+    <form action="/signup" method="POST" id="form-registro">
+      <div class="card border-dark w-25 mx-auto my-3">
         <div class="card-header"><h3 class="my-auto text-warning text-center">REGISTRO</h3></div>
        <div class="card-body">
          <div class="form-group">
@@ -35,6 +35,7 @@
                name="name"
                placeholder="Martin"
                id="name"
+               required
              />
              <label for="name">NOMBRE</label>
            </div>
@@ -43,9 +44,10 @@
            <input
              type="text"
              class="form-control"
-             surname="surname"
+             name="surname"
              placeholder="Hernandez"
              id="surname"
+             required
            />
            <label for="surname" class="form-label">APELLIDO</label>
          </div>
@@ -55,7 +57,8 @@
              class="form-control"
              name="phone"
              placeholder="3514500687"
-             id="phone"
+             id="phone" 
+             required
            />
            <label for="phone" class="form-label">TELÉFONO</label>
          </div>
@@ -66,37 +69,39 @@
              name="email"
              placeholder="martin.hernandez@gmail.com"
              id="email"
+             required
            />
            <label for="email" class="form-label">EMAIL</label>
          </div>
-         <div class="form-floating mb-3">
-           <input
-             type="password"
-             class="form-control"
-             name="password"
-             placeholder="*********"
-             id="password"
-           />
-           <label for="password" class="form-label">CONTRASEÑA</label>
-         </div>
-         <div class="form-floating mb-3">
-           <input
-             type="password"
-             class="form-control"
-             name="passwordCheck"
-             placeholder="*********"
-             id="passwordCheck"
-           />
-           <label for="passwordCheck" class="form-label">REPITIR LA CONTRASEÑA</label>
-         </div>
-         <button type="submit" class="btn btn-outline-warning" id="btnRegister">
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                placeholder="*********"
+                id="password"
+                required
+              />
+              <label for="password" class="form-label">CONTRASEÑA</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                name="passwordCheck"
+                placeholder="*********"
+                id="passwordCheck"
+                required
+              />
+              <label for="passwordCheck" class="form-label">REPITIR LA CONTRASEÑA</label>
+            </div>
+         <button type="submit" class="btn btn-outline-warning w-100" id="btnRegister">
            <b>REGISTRARSE</b>
          </button>
-         <span>Ya tengo una cuenta <a href="/login">loguearse</a></span>
+         <!-- <p class="mt-2">Ya tengo una cuenta registrada <a href="/login">ingresar</a></p> -->
         </div>
     </form>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/register.js"></script>
   </body>
 </html>
-

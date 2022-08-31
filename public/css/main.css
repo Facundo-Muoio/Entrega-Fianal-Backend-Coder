@@ -5,3 +5,127 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 input[type=number] { -moz-appearance:textfield; }
+
+.invalid {
+  color: rgb(231, 76, 60);
+}
+
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 3000;
+}
+
+.product-container{
+  margin: 0px auto;
+  width: 1300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card-books {
+  border: 1px solid #b9b9b9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-books{
+  width: 300px;
+  height: 600px;
+  box-shadow: 5px 5px 5px #b9b9b9;
+}
+
+.card-books img {
+  width: 298px;
+  height: 400px;
+  margin: 0px 50px;
+  margin-bottom: 2px;
+  position: relative;
+  bottom: 12px;
+}
+
+.card-header-books{
+  width: 100%;
+  height: 40px;
+  color: white;
+  background-color: rgb(44, 62, 80);
+  text-align: center;
+  position: relative;
+  bottom: 5px;
+  border-radius: 10px 10px 0px 0px;
+  line-height: 50px;
+}
+
+.container-btn-addCart{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.container-search{
+  margin: 20px auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bi-search{
+  position: relative;
+  right: 29px;
+}
+
+.input-search{
+  width: 400px;
+  padding: 10px 10px;
+}
+
+.aCart{
+ font-size: 10px;
+ color: black;
+ position: relative;
+ right: 15px;
+}
+
+.bi-cart-fill{
+  font-size: 20px;
+  line-height: 16px;
+  color:white;
+}
+
+.bi-cart-fill:hover{
+  cursor: pointer;
+}
+
+.footer{
+  width: 100%;
+  height: 200px;
+  padding: 40px 0px;
+}
+
+.footer > div {
+  width: 320px;
+}
+
+.footer > h2 {
+  font-size: 50px;
+}
+
+#dataWeb{
+  width: 80px;
+  height: 90px;
+}
+
+.images > img{
+  margin-right: 80px;
+}

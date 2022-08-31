@@ -9,5 +9,7 @@ const result = dotenv.config({
 const PORT = result.parsed.PORT;
 const HOST = result.parsed.HOST;
 const URLMONGO = result.parsed.URLMONGO
+const APP_EMAIL = result.parsed.APP_EMAIL
+const APP_EMAIL_PSW = result.parsed.APP_EMAIL_PSW
 
-export { PORT, HOST, URLMONGO };
+export { PORT, HOST, URLMONGO, APP_EMAIL, APP_EMAIL_PSW };
