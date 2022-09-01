@@ -10,6 +10,7 @@ import "./passport/passport.js"
 import http from "http"
 import { Server } from "socket.io";
 import { chat } from "./services/chat.js";
+import cors from "cors"
 
 
 //variables
@@ -26,6 +27,7 @@ app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
+app.use(cors())
 app.use(
   session({
     secret: "secreto",
