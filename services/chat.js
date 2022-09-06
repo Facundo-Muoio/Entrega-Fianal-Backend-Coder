@@ -2,7 +2,7 @@ import { io } from "../index.js";
 import logger from "../loggers/logger.js";
 import { dtoMessage } from "../DTOS/messageDTO/messages.js";
 
-export async function chat() {
+export async function chat(req, res) {
   return io.on("connection", async (socket) => {
     logger.info(`socket connected with id: ${socket.id}`);
     socket.emit("saved messages", await dtoMessage.getMessages());

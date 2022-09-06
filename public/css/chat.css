@@ -26,8 +26,8 @@
 }
 
 .bi-chat-left-fill {
+    color: #13967d ;
     font-size: 70px;
-    color: rgb(44, 62, 80);
     position: fixed;
     z-index: 1000;
     right: 50px;
@@ -80,8 +80,8 @@
 
 .userMessage{
     color: white;
-    background-color: rgb(44, 62, 80) ;
-    border: 0.5px solid rgb(44, 62, 80);
+    background-color: #13967d  ;
+    border: 0.5px solid #13967d ;
     border-radius: 12px;
     padding: 6px 12px;
     width: fit-content;

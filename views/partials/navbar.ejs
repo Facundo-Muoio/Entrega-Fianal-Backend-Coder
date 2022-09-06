@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container w-75 d-flex justify-content-between">
-      <a class="navbar-brand" href="/">LAST <i class="bi bi-book-half"> PAGES</i></a>
+      <a class="navbar-brand" href="/productos">LAST <i class="bi bi-book-half"> PAGES</i></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -35,12 +35,12 @@
                 >PRODUCTOS</a
               >
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="/fantasia">Fantasia</a>
-                <a class="dropdown-item" href="/terror">Terror</a>
-                <a class="dropdown-item" href="/infantil">Infantil</a>
-                <a class="dropdown-item" href="/ficcion">Ficción y Literatura</a>
+                <a class="dropdown-item" href="/productos/fantasia">Fantasia</a>
+                <a class="dropdown-item" href="/productos/terror">Terror</a>
+                <a class="dropdown-item" href="/productos/infantil">Infantil</a>
+                <a class="dropdown-item" href="/productos/ficcion">Ficción y Literatura</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/">Todos</a>
+                <a class="dropdown-item" href="/productos">Todos</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -60,7 +60,7 @@
                 </div>
             </li>
             <li class="nav-item d-flex align-items-center">
-              <a href="/cart">
+              <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i class="bi bi-cart-fill"></i>
               </a>
             </li>
@@ -69,3 +69,13 @@
       </div>
     </div>
 </nav>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">MI CARRITO</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  </div>
+</div>

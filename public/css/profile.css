@@ -1,0 +1,48 @@
+.container-perfil-card{
+    width: 700px;
+    height: 300px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 8px 8px 5px #d7d3d3;
+    border-radius: 12px;
+}
+
+.container-perfil-datos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: rgb(247, 191, 102);
+    width: 350px;
+    height: 100%;
+    background-color: rgb(44,62,80);
+    border: 1px solid rgb(44,62,80);
+    border-radius: 12px 0px 0px 12px;
+    padding: 10px 0px 10px 20px; 
+
+}
+
+.container-perfil-datos > h5 > span {
+    color: white;
+    margin-right: 4px;
+}
+
+.contianer-user-icon{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(247, 191, 102);
+    border-radius: 0px 12px 12px 0px;
+    border: 1px solid rgb(44,62,80);
+}
+
+.bi-person-circle{
+    font-size: 200px;
+    color: black;
+}

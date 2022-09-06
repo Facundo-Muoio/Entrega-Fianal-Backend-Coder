@@ -7,7 +7,9 @@ const productosSchema = new Schema({
     genero: {type: String, required: true},
     precio: {type: String, required: true},
     imagen: {type: String, required: true},
-    stock: {type: Number, required: true}
+    stock: {type: Number, required: true},
+    biografia: {type: String, required: true},
+    sinopsis: {type: String, required: true},
 })
 
 export const Producto = model("product", productosSchema)

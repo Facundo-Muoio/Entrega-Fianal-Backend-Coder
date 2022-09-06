@@ -9,9 +9,11 @@ import { indexCtrl } from "../controllers/indexControllers/index.js";
 import { cartCtrl } from "../controllers/cartControllers/cart.js";
 import { purchaseCtrl } from "../controllers/purchaseControllers/purchase.js";
 import { generosCtrl } from "../controllers/generosControllers/fantasia.js";
+import { profileCtrl } from "../controllers/profileControllers/profile.js"
+import { productCtrl } from "../controllers/productControllers/product.js";
 const router = Router();
 
-router.get("/", indexCtrl.getIndex);
+router.get("/productos", indexCtrl.getIndex);
 
 router.route("/signup")
   .get(signUpCtrl.getSignUp)
@@ -21,14 +23,10 @@ router.route("/login")
   .get(loginCtrl.getLogin)
   .post(loginAuthenticate, loginCtrl.postLogin)
 
-router.route("/products", isAuthenticated)
+router.route("/perfil")
+  .get(isAuthenticated, profileCtrl.getProfile)
 
-router.route("/product/:id", isAuthenticated)
-
-router.route("/profile", isAuthenticated)
-
-router.route("/cart")
-  .get(isAuthenticated, cartCtrl.getCart)
+router.route("/carrito")
   .post(isAuthenticated, cartCtrl.postCart)
 
 router.route("/purchase")
@@ -37,16 +35,20 @@ router.route("/purchase")
 router.route("/logout")
   .get( isAuthenticated, logoutCtrl.logout)
 
-router.route("/fantasia")
+router.route("/producto/:id")
+  .get(isAuthenticated, productCtrl.getProduct)
+  .post(isAuthenticated)
+  
+router.route("/productos/fantasia")
   .get(isAuthenticated, generosCtrl.getFantasia)
 
-router.route("/terror")
+router.route("/productos/terror")
   .get(isAuthenticated, generosCtrl.getTerror)
 
-router.route("/infantil")
+router.route("/productos/infantil")
   .get(isAuthenticated, generosCtrl.getInfantil)
 
-router.route("/ficcion")
+router.route("/productos/ficcion")
   .get(isAuthenticated, generosCtrl.getFiccionLiteratura)
 
 

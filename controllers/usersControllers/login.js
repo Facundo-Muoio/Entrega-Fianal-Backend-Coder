@@ -5,5 +5,5 @@ loginCtrl.getLogin = async (req, res) => {
 }
 
 loginCtrl.postLogin =  (req, res) => {
-    res.redirect("/")
+    res.redirect("/productos")
 }

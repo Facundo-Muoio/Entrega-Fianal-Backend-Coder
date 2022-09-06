@@ -1,0 +1,44 @@
+.offcanvas{
+    z-index: 3001
+ }
+ 
+ .container-aticle {
+     margin-top: 20px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     border-bottom: 2px solid #13967d;
+     padding: 10px 5px;
+ }
+ 
+ .container-aticle> img{
+     width: 62.5px;
+     height: 100px;
+ }
+ 
+ .article-content-info{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .article-content-info h5{
+     font-size: 14px;
+ }
+ 
+ .delete-product{ 
+     width: 1em;
+     height: 1em;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .bi-x-circle-fill{
+     color: red;
+     font-size: 1em;
+ }
+ 
+ 

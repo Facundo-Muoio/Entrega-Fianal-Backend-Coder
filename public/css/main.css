@@ -28,66 +28,42 @@ input[type=number] { -moz-appearance:textfield; }
   margin-bottom: 30px;
 }
 
-.card-books {
-  border: 1px solid #b9b9b9;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-books{
+.container-card{
   width: 300px;
-  height: 600px;
-  box-shadow: 5px 5px 5px #b9b9b9;
+  height: 520px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  cursor: default;
+  transition: all 400ms ease;
+  margin-bottom: 40px;
 }
 
-.card-books img {
-  width: 298px;
-  height: 400px;
-  margin: 0px 50px;
-  margin-bottom: 2px;
-  position: relative;
-  bottom: 12px;
+.container-card:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%)
 }
 
-.card-header-books{
+.container-card > a > img {
   width: 100%;
-  height: 40px;
-  color: white;
-  background-color: rgb(44, 62, 80);
-  text-align: center;
-  position: relative;
-  bottom: 5px;
-  border-radius: 10px 10px 0px 0px;
-  line-height: 50px;
+  height: 400px;
 }
 
-.container-btn-addCart{
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
+.card-body{
+ padding: 5px 10px;
 }
 
-.container-search{
-  margin: 20px auto;
-  width: 1200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.card-body > p {
+  margin-bottom: 3px;
 }
 
-.bi-search{
-  position: relative;
-  right: 29px;
+.p-autor {
+  color: #ababab;
 }
 
-.input-search{
-  width: 400px;
-  padding: 10px 10px;
+.p-precio{
+color: #13967d;
+font-size: 1.1em;
 }
 
 .aCart{

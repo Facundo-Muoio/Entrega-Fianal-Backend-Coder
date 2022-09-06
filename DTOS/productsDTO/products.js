@@ -6,4 +6,4 @@ dtoProducts.getProducts = async () => await daoProducts.getProducts()
 
 dtoProducts.getProduct = async (id) => await daoProducts.getProduct(id)
 
-dtoProducts.updateProduct = async (id, cantidad) => await daoProducts.updateProduct(id, cantidad)
+dtoProducts.updateProduct = async (nombre, cantidad) => await daoProducts.updateProduct(nombre, cantidad)

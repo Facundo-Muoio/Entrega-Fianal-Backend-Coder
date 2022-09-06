@@ -5,10 +5,11 @@ daoProducts.getProducts = async () => await Producto.find({});
 
 daoProducts.getProduct = async (id) => await Producto.findById(id);
 
-daoProducts.updateProduct = async (id, cantidad) =>{
- let product = await daoProducts.getProduct(id)
+daoProducts.getProductByName = async (name) => await Producto.findOne({name})
+
+daoProducts.updateProduct = async (nombre, cantidad) =>{
+ let product = await daoProducts.getProductByName({nombre})
  let newStock = product.stock - cantidad
- await Producto.findByIdAndUpdate({ _id : id }, { stock: newStock }) 
-  console.log("producto actualizado")
+ await Producto.findOneAndUpdate({ nombre : nombre }, { stock: newStock }) 
 }
 

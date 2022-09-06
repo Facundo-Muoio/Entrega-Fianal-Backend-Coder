@@ -1,0 +1,151 @@
+.product-container{
+    width: 1200px;
+    height: 575px;
+    margin: 50 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    border-bottom: 1px solid #ababab;
+}
+
+.product-img-box > img {
+    width: 400px;
+    height: 550px;
+}
+
+.prodcut-detail-box{
+    padding-left: 1em;
+    height: 550px;
+    border-left: 1px solid #ababab;
+}
+
+.product-author > h3 {
+    color: #f39c12;
+}
+
+.quantity-box{
+    margin-top: 30px;
+}
+
+.quantity-box > input {
+    height: 36px;
+    width:50px;
+    padding: 1px;
+    border-radius: 4px;
+    border: 1px solid #ababab;
+    text-align: center;
+    margin: 0 4px;
+}
+
+.quantity-box > input:focus {
+    outline: none;
+}
+
+.quantity-box > button:active {
+    outline: none;
+}
+
+.quantity-box > span {
+    line-height: 1em;
+    margin-left: 6px;
+}
+
+.price-box{
+    margin-top: 1em;
+}
+
+.product-price{
+    font-size: 2em;
+}
+
+.add-to-cart{
+    margin-top: 1em;
+
+}
+
+.add-to-cart > button {
+    border-radius: 4px;
+    width: 50%;
+    height: 3em;
+    border: none;
+    font-size: 1.15em;
+    transition: all 400ms ease;
+}
+
+.add-to-cart button:hover {
+    background-color: #13967d !important;
+}
+
+.add-to-cart > button > b {
+    margin-left: 6px;
+}
+
+.box-send {
+    margin-top: 2em;
+}
+
+.box-send, .box-sucursal {
+    font-size: 1.15em;
+}
+
+.bi-shop, .bi-truck {
+    font-size: 1.5em;
+    color: #13967d;
+    margin-right: 4px;
+}
+
+.bi-truck {
+ position: relative;
+ top: 3px;   
+}
+
+.container-tabs{
+    width: 1200px;
+    margin: 25px auto 50px auto;
+}
+
+/* .offcanvas{
+   z-index: 3001
+}
+
+.container-aticle {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #13967d;
+    padding: 10px 5px;
+}
+
+.container-aticle> img{
+    width: 62.5px;
+    height: 100px;
+}
+
+.article-content-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-content-info h5{
+    font-size: 14px;
+}
+
+.delete-product{ 
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-x-circle-fill{
+    color: red;
+    font-size: 1em;
+}
+ */

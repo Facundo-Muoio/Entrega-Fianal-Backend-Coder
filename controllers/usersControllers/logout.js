@@ -1,4 +1,3 @@
-import {io} from "../../index.js"
 export const logoutCtrl = {};
 
 logoutCtrl.logout = async (req, res) => {
@@ -7,7 +6,7 @@ logoutCtrl.logout = async (req, res) => {
       return next(err);
     }
     req.session.destroy()
-    res.redirect("/");
+    res.redirect("/productos");
   });
 };
 
