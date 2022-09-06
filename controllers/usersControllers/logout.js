@@ -6,7 +6,7 @@ logoutCtrl.logout = async (req, res) => {
       return next(err);
     }
     req.session.destroy()
-    res.redirect("/productos");
+    res.redirect("/");
   });
 };
 

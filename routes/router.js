@@ -13,7 +13,8 @@ import { profileCtrl } from "../controllers/profileControllers/profile.js"
 import { productCtrl } from "../controllers/productControllers/product.js";
 const router = Router();
 
-router.get("/productos", indexCtrl.getIndex);
+router.route("/")
+  .get(indexCtrl.getIndex)
 
 router.route("/signup")
   .get(signUpCtrl.getSignUp)
@@ -22,6 +23,9 @@ router.route("/signup")
 router.route("/login")
   .get(loginCtrl.getLogin)
   .post(loginAuthenticate, loginCtrl.postLogin)
+
+router.route("/productos")
+  .get(isAuthenticated, indexCtrl.getIndexProducts)
 
 router.route("/perfil")
   .get(isAuthenticated, profileCtrl.getProfile)
